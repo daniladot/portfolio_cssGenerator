@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <style>
+
+
+    </style>
+
+    <section id="element"></section>
+
+    <hr>
+
+    <div class="btngroup">
+        <button class=" btn active">Size</button>
+        <button class="btn">Radius</button>
+        <button class="btn">Background-color</button>
+        <button class="btn">Box-shadow</button>
+    </div>
+    <div class="section show">
+        <h4>Size</h4>
+        <label>Width: <input class="sizes" id="size_w" type="text"></label>
+        <label>Height: <input class="sizes" id="size_h" type="text"></label>
+    </div>
+    <div class="section">
+        <h4>Radius:</h4>
+        <div class="box_sh box_r">
+            <div class="btngroup">
+                <button class="btn_r active" id="commone_angle">Common angles</button>
+                <button class="btn_r" id="different_angle">Differnt angles</button>
+            </div>
+            <div class="section_r show" id="rm">
+                <label>radius: <input class="box_shadow" name="rm" id="radius" type="range" min="0" max="50" step="1" value="0"></label>
+            </div>
+            <div class= "section_r" id="rd">
+                <label>left top: <input class="box_shadow" id="radius_lt" type="range" min="0" max="50" step="1" value="0"></label>
+                <label>left bottom: <input class="box_shadow" id="radius_lb" type="range" min="0" max="50" step="1" value="0"></label>
+                <label>right top: <input class="box_shadow" id="radius_rt" type="range" min="0" max="50" step="1" value="0"></label>
+                <label>right bottom: <input class="box_shadow" id="radius_rb" type="range" min="0" max="50" step="1" value="0"></label>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h4>Background color:</h4>
+        <div class="box_sh">
+            <label>r: <input class="box_shadow" id="colorBg" type=color></label>
+            <label>a: <input class="box_shadow" id="colorBg_a" type=range min='0' max='1' step='0.01' value='1'></label>
+        </div>
+    </div>
+    <div class="section">
+        <h4>box-shadow:</h4>
+        <div class="box_sh">
+            <div class="box_sh_inside">
+                <label>x-offset: <input class="box_shadow" id="offset_x" type=range min="-200" max="200" value="0" step="1"></label>
+                <label>y-offset: <input class="box_shadow" id="offset_y" type=range min="-200" max="200" value="0" step="1"></label>
+                <label>blur: <input class="box_shadow" id="blur" type=range min="0" max="50" value="6" step="1"></label>
+                <label>stretching: <input class="box_shadow" id="stretching" type=range min="0" max="50" value="0" step="1"></label>
+            </div>
+            <div class="box_sh_inside">
+                <label>rgb: <input class="box_shadow" id="colorBg_shadow" type=color></label>
+                <label>a: <input class="box_shadow" id="colorBg_shadow_a" type=range min='0' max='1' step='0.01'></label>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h4>You HTML code:</h4>
+        <div class="box_sh">
+            <label><textarea id="result" name="description"></textarea></label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
